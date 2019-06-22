@@ -6,17 +6,20 @@ import * as serviceWorker from './serviceWorker';
 
 import { Provider } from 'react-redux';
 import todoReducer from './todoReducer.js';
-import { createStore } from 'redux';
+import filterReducer from './filterReducer.js';
 
+import { createStore, combineReducers} from 'redux';
 
-const store = createStore(todoReducer);
+const rootReducer = combineReducers({
+  todoReducer,
+  filterReducer
+});
 
+const store = createStore(rootReducer);
 ReactDOM.render(
   <Provider store={store} >
     <App />
   </Provider>
-
-
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

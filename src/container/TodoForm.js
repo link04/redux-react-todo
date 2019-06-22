@@ -20,7 +20,6 @@ class TodoForm extends React.Component {
     this.setState({
       text: ''
     });
-
   };
 
   render(){

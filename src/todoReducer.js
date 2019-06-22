@@ -1,6 +1,5 @@
 const initialTodosState = {
-  todos: [],
-  visibilityFilter: 'All'
+  todos: []
 };
 
 const reducer = (state = initialTodosState,action) => {
@@ -8,7 +7,6 @@ const reducer = (state = initialTodosState,action) => {
     case 'ADD_TODO':
       return {...state, todos:[...state.todos, {...action.payload, id: state.todos.length + 1, completed:false} ]};
     case 'TOGGLE_TODO':
-    console.log(action);
       return {...state, todos: state.todos.map(todo => todo.id === action.payload ? {...todo, completed: !todo.completed} : todo)};
     default:
       return state;

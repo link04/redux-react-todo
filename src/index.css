@@ -26,3 +26,11 @@ code {
 .todo-item {
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+}
+
+.active-link{
+  background-color: rgb(75, 202, 219);
+}
