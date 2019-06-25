@@ -34,3 +34,10 @@ a {
 .active-link{
   background-color: rgb(75, 202, 219);
 }
+
+input[type='text'] {
+  border: #79e4ef 2px solid;
+  height: 20px;
+  width: 200px;
+  border-radius: 5px;
+}
