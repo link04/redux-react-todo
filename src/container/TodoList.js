@@ -19,9 +19,9 @@ class TodoList extends React.Component {
   render(){
     const todos = this.filterTodos(this.props.todos, this.props.visibilityFilter).map(todo => {
       return <li onClick={() => this.props.toggleTodo(todo.id)}
-        className={todo.completed? 'todo-item completed-todo': 'todo-item incomplete-todo'  }
+        className={todo.completed? 'todo-item completed-todo': 'todo-item incomplete-todo'}
         key={todo.id}> {todo.text} </li>
-    });
+      });
     return(
       <ul>
         {todos}

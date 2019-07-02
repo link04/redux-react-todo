@@ -17,7 +17,6 @@ code {
    color:rgba(87, 214, 236, 0.87);
 }
 
-
 .incomplete-todo {
    text-decoration-line: underline;
    color:rgba(110, 224, 100, 0.78);
